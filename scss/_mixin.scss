@@ -1,0 +1,205 @@
+@mixin btn($variant, $size, $icon, $iconTip) {
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 12px;
+  display: inline-block;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  //bg color
+  @if $variant == 1 {
+    border-radius: 12px;
+    border: 2px solid #46760a;
+    background: transparent;
+    color: #151515;
+  } @else if $variant == 2 {
+    border-radius: 12px;
+    border: 2px solid #46760a;
+    background: #6a983c;
+    color: #ffffff;
+  } @else if $variant == 3 {
+    border-radius: 12px;
+    background: transparent;
+    color: #151515;
+    border: none;
+  }
+  // size
+  @if $size == large {
+    padding: 18px 48px;
+  } @else if $size == medium {
+    padding: 12px 16px;
+  } @else if $size == small {
+    padding: 12px;
+  }
+  //kattaligi va ikon
+  @if $icon == true and $iconTip == 1 {
+    &::before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url(../img/icon1.svg);
+      background-position: center;
+    }
+  }
+  @if $icon == true and $iconTip == 2 {
+    &::before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url(../img/icon2.svg);
+      background-position: center;
+    }
+  }
+  @if $icon == true and $iconTip == 3 {
+    &::before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url(../img/icon3.svg);
+      background-position: center;
+      transform: rotate(180deg);
+    }
+  }
+  @if $icon == true and $iconTip == 4 {
+    &::before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url(../img/icon4.svg);
+      background-position: center;
+      transform: rotate(180deg);
+    }
+  }
+  @if $icon == true and $iconTip == 5 {
+    &::before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url(../img/icon5.svg);
+      background-position: center;
+    }
+  }
+  @if $icon == true and $iconTip == 6 {
+    &::before {
+      content: "";
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url(../img/icon6face.svg);
+      background-position: center;
+    }
+  }
+  //pozitsiya
+  @if $icon == false and $iconTip == 1 {
+    &::after {
+      content: "";
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url(../img/icon1.svg);
+      background-position: center;
+      transform: rotate(180deg);
+    }
+  }
+  @if $icon == false and $iconTip == 2 {
+    &::after {
+      content: "";
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url(../img/icon2.svg);
+      background-position: center;
+      transform: rotate(180deg);
+    }
+  }
+  @if $icon == false and $iconTip == 3 {
+    &::after {
+      content: "";
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url(../img/icon3.svg);
+      background-position: center;
+    }
+  }
+  @if $icon == false and $iconTip == 4 {
+    &::after {
+      content: "";
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-image: url(../img/icon4.svg);
+      background-position: center;
+    }
+  }
+}
+@mixin btn8($pd:0 8px) {
+  border-radius: 12px;
+  background: $c-2-e;
+  padding:$pd;
+
+  @include title(12px, $c-2-a);
+}
+@mixin mainTitle {
+  color: $c-1-a;
+  font-size: 15px;
+  font-weight: 700;
+}
+@mixin title($size: 32px, $color: $c-1-a) {
+  color: $color;
+  font-size: $size;
+  font-weight: 600;
+}
+@mixin subTitle {
+  color: $c-1-a;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@mixin text($color: $c-1-b, $size: 12px) {
+  color: $color;
+  font-family: Open Sans;
+  font-size: $size;
+  font-weight: 400;
+}
+@mixin card {
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid $c-1-d;
+  background: $c-1-j;
+  width: 269px;
+}
+@mixin pd {
+  padding: 45px 64px;
+}
+@mixin label {
+  display: block;
+  border: 2px solid $c-1-d;
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@mixin input {
+  background-color: $c-2-a;
+  background-repeat: no-repeat;
+  background-image: url(../../img/fruitIcon.svg);
+  background-position: center;
+  border: 2px solid $c-2-b;
+}

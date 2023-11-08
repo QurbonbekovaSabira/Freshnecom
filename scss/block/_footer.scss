@@ -1,0 +1,43 @@
+.footer {
+  @include pd;
+}
+.footer_list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+.footer__list_title {
+  @include title(18px);
+  margin-bottom: 16px;
+}
+.footer__list_link {
+  @include text($c-2-a);
+  display: block;
+  cursor: pointer;
+}
+.footer__list_link:not(:last-child) {
+  margin-bottom: 16px;
+}
+// second list
+.footer__product_title {
+  @include title(18px);
+  margin-bottom: 16px;
+}
+.footer__product_link {
+  @include title(12px);
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: $c-1-f;
+}
+.footer__product_list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.footer__product{
+    margin-bottom: 48px;
+}
+.footer__text{
+    @include text(14px);
+}

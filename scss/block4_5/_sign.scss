@@ -1,0 +1,384 @@
+.signup {
+  padding: 16px 45px;
+}
+
+.signup__registration {
+  width: 670px;
+}
+.signup__registration_title {
+  @include title(22px, $c-1-a);
+  margin-bottom: 4px;
+  display: block;
+}
+.signup__registration_desc_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.signup__registration_desc {
+  @include text;
+}
+.signup__registration_form {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-bottom: 64px;
+}
+.signup__registration_input_box {
+  width: 319px;
+}
+.signup__registration_label {
+  @include title(12px, $c-1-a);
+  width: 100%;
+  display: inline-block;
+}
+.signup__registration_input::placeholder {
+  @include text($c-1-c, 14px);
+}
+.signup__registration_input {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid $c-1-d;
+  background: $c-1-h;
+  padding: 11px 16px 12px 21px;
+  outline-color: $c-1-c;
+}
+.signup__registration_ship {
+  padding: 9px 16px;
+  border-radius: 12px;
+  border: 1px solid $c-1-d;
+  background: $c-1-h;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.signup__registration_form_text {
+  @include title(12px, $c-1-a);
+}
+.signup__registration_checkbox {
+  gap: 8px;
+}
+.signup__registration_checkbox_text_box {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.signup__registration_checkbox_text1 {
+  @include title(12px, $c-2-a);
+}
+.signup__registration_checkbox_btn {
+  border: none;
+  border-radius: 12px;
+  background: $c-1-f;
+  padding: 0 8px;
+}
+.signup__registration_checkbox_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  border: 1px solid $c-1-d;
+  background: $c-1-h;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+}
+.signup__registration_checkbox_box2 {
+  margin-bottom: 64px;
+}
+.signup__registration_card {
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid $c-1-d;
+  background: $c-1-j;
+  margin-bottom: 16px;
+}
+
+.signup__registration_card_input:checked + .signup__registration_card_label {
+  background-color: $c-2-a;
+  background-repeat: no-repeat;
+  background-image: url(../../img/dote.svg);
+  background-position: center;
+  border: 2px solid $c-2-a;
+}
+.signup__registration_card_inputText {
+  @include title(12px, $c-1-a);
+}
+.signup__registration_card_access {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.signup__registration_cardInput {
+  border-radius: 12px;
+  border: 1px solid $c-1-d;
+  background: $c-1-h;
+  padding: 11px 16px 12px 21px;
+  outline-color: $c-1-b;
+  width: 100%;
+  margin-bottom: 32px;
+}
+.signup__registration_cardInput::placeholder {
+  @include text($c-1-c, 14px);
+}
+.signup__registration_cardLabel {
+  @include title(12px, $c-1-a);
+  display: block;
+}
+.signup__registration_card_information_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.signup__registration_card_information_label {
+  display: block;
+  @include title(12px, $c-1-a);
+}
+.signup__registration_card_information_input {
+  border-radius: 12px;
+  border: 1px solid $c-1-d;
+  background: $c-1-h;
+  padding: 11px 16px 12px 21px;
+  outline-color: $c-1-b;
+}
+
+.signup__registration_card_information_item:nth-child(2)
+  .signup__registration_card_information_input {
+  width: 125px;
+}
+.signup__registration_card_information_item:nth-child(3)
+  .signup__registration_card_information_input {
+  width: 125px;
+}
+.signup__registration_textarea {
+  width: 670px;
+  resize: none;
+  border-radius: 12px;
+  border: 1px solid $c-1-d;
+  background: $c-1-h;
+  min-height: 112px;
+  padding: 11px 16px 11px 21px;
+  @include text($c-1-c, 14px);
+  outline-color: $c-1-b;
+
+  margin-bottom: 64px;
+}
+.signup__registration_cards_text {
+  @include text($c-1-a, 14px);
+}
+.signup__registration_ship3 {
+  margin-bottom: 16px;
+}
+.signup__registration_ship2 {
+  margin-bottom: 32px;
+}
+.signup__registration_btn {
+  @include btn(2, large, _, _);
+  margin-bottom: 32px;
+}
+.signup__registration_secutiry {
+  max-width: 213px;
+}
+.signup__registration_secutiry_img {
+  margin-bottom: 8px;
+}
+.signup__registration_secutiry_title {
+  @include title(12px, $c-1-a);
+  margin-bottom: 2px;
+  width: 100%;
+}
+.signup__registration_secutiry_text {
+  @include text($c-1-c, 12px);
+  width: 100%;
+}
+///// div 2
+///
+.signup__container {
+  display: flex;
+  gap:32px;
+align-items: start;
+}
+.signup__about {
+  width: 468px;
+ 
+  padding: 32px 16px;
+  border-radius: 12px;
+  border: 1px solid $c-1-d;
+  background: $c-1-j;
+}
+.signup__product_about{
+  display: flex;
+  gap: 16px;
+margin-bottom: 16px;
+}
+.signup__about_title {
+  @include title(22px, $c-1-a);
+  margin: 0;
+  margin-bottom: 4px;
+}
+.signup__about_text {
+  @include text;
+  margin-bottom: 40px;
+}
+.signup__product_about_title {
+  @include subTitle;
+  // margin-bottom: 4px;
+  margin: 0;
+  margin-bottom: 4px;
+}
+.signup__product_about_list_title {
+  @include text($c-1-c, _);
+  margin-bottom: 3px;
+}
+.signup__product_about_list_text {
+  @include text($c-1-a, _);
+  margin-bottom: 3px;
+}
+.signup__product_about_list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.signup__product_about_item1 {
+  display: flex;
+  gap: 41px;
+}
+.signup__product_about_item2 {
+  display: flex;
+  gap: 14px;
+}
+.signup__product_about_img_text1 {
+  @include text($c-1-c, 12px);
+  margin-bottom: 8px;
+  &::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../../img/heart.svg);
+  }
+}
+.signup__product_about_img_text2 {
+  @include text($c-1-c, 12px);
+  margin-bottom: 8px;
+  &::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../../img/heart.svg);
+  }
+}
+.signup__product_about_img_text3 {
+  @include text($c-1-c, 12px);
+  &::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../../img/heart.svg);
+  }
+}
+.signup__product_about_content{
+  margin-bottom: 16px;
+
+}
+.signup__product_about_stars {
+  margin-bottom: 16px;
+}
+.signup__product_about_price {
+  @include title(18px, $c-2-a);
+}
+.signup__product_about_prices_boxs {
+  display: flex;
+  justify-content: space-between;
+}
+.signup__product_about_price_old {
+  @include title(12px, $c-1-c);
+}
+
+.signup__product_about_select {
+  padding: 6px;
+  border-radius: 12px;
+  border: 1px solid $c-1-d;
+  background: $c-1-h;
+}
+.signup__product_about_select_number {
+  margin-right: 6px;
+  @include text($c-1-c,12px);
+}
+.signup__product_about_select_text{
+  @include title(12px,_);
+padding-left: 6px;
+border-left: 1px solid $c-1-d;
+  
+}
+.signup__product_boxs_line{
+  width: 436px;
+  height: 1px;
+  background: #F9F9F9;
+  display: inline-block;
+  margin-bottom: 32px;
+}
+.signup__product_boxs_item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.signup__product_boxs_item:last-child{
+  margin-bottom: 0;
+}
+.signup__product_boxs_item_text{
+  @include title(12px,_);
+
+}
+.signup__product_boxs_list{
+  margin-bottom: 32px;
+}
+.signup__product_input_box{
+  position: relative;
+  width: 436px;
+margin-bottom: 32px;
+}
+.signup__product_input{
+  width: 100%;
+  border-radius: 12px;
+border: 1px solid  #D1D1D1;
+background:  #F9F9F9;
+padding: 11px 16px 12px 21px;
+}
+.signup__product_input_btn{
+  @include btn(3,medium,_,_);
+  position: absolute;
+  top: 3px;
+  right: 4px;
+}
+.signup__product_price_title{
+  @include title(12px,_);
+}
+.signup__product_price_text{
+  @include text($c-2-a,12px);
+}
+.signup__product_price_price{
+  @include title(26px, $c-2-a);
+}
+.signup__product_price_box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.signup_link{
+  display: inline-block;
+  margin: 64px 45px;
+  color: #151515;
+font-family: Open Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}

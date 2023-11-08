@@ -1,0 +1,51 @@
+.dinner{
+    padding: 48px 45px;
+}
+.dinner__about{
+    width: 100%;
+    position: relative;
+    fill: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0.00) 100%);
+
+}
+.dinner__container{
+    padding: 32px 200px;
+    background-repeat: no-repeat;
+    background-image: url(../../img/dinnerImg.svg);
+}
+.dinner__about_list{
+    width: 168px;;
+}
+.dinner__about_item{
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+.dinner__about_item:last-child{
+    margin-bottom: 0;
+}
+.dinner__about_item_title{
+    @include title(12px,$c-1-c);
+    display: inline-block;
+}
+.dinner__about_item_text{
+    @include title(12px,$c-1-j);
+    display: inline-block;
+}
+.dinner__about_item_text2{
+    @include title(12px,$c-1-j);
+    display: inline-block;
+    text-decoration: underline;
+}
+.dinner__about_title{
+    width: 569px;
+    @include title(32px,$c-1-j);
+}
+.dinner__about{
+    display: flex;
+    gap:32px;
+    margin-top: 280px;
+    width: 100%;
+   align-items: end;
+}

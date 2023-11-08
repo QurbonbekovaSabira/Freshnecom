@@ -1,0 +1,165 @@
+.fruit {
+  padding: 16px 45px;
+}
+.fruit_content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.fruit__content_text1 {
+  @include text;
+}
+.fruit__content_text2 {
+  @include text;
+}
+.fruit__content_text3 {
+  @include text($c-1-a);
+}
+.fruit__content2_box {
+  padding: 16px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fruit__content2_list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.fruit__content2_title {
+  @include title;
+}
+.fruit__content2_link {
+  @include text($c-1-a);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  &:hover {
+    color: $c-1-c;
+  }
+  &::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../../img/fruitIcon1.svg);
+  }
+}
+.fruit__chekbox_label {
+  display: block;
+  border: 2px solid $c-1-d;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.fruit__chekbox_box_input:checked + .fruit__chekbox_label {
+  background-color: $c-1-a;
+  background-repeat: no-repeat;
+  background-image: url(../../img/dote.svg);
+  background-position: center;
+  border: 2px solid $c-1-a;
+}
+.fruit__form {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.fruit__form_box {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.fruit__chekbox_box_1_text {
+  @include text(14px);
+  margin-left: 8px;
+}
+.fruit__chekbox_box_1 {
+  display: flex;
+  align-items: center;
+}
+.fruit__chekbox_box {
+  // width: 236px;
+  border-radius: 12px;
+  border: 1px solid $c-1-d;
+  background: $c-1-h;
+  display: flex;
+  align-items: center;
+  padding: 9px 16px;
+  gap: 16px;
+}
+.fruit__chekbox_box_2 {
+  display: flex;
+  align-items: center;
+}
+.fruit__chekbox_label1 {
+  display: block;
+  border: 2px solid $c-1-d;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.fruit__chekbox_box_input1:checked + .fruit__chekbox_label1 {
+  background-color: $c-1-a;
+  background-repeat: no-repeat;
+  background-image: url(../../img/dote.svg);
+  background-position: center;
+  border: 2px solid $c-1-a;
+}
+.fruit__chekbox2_label1 {
+  @include label;
+}
+.fruit__chekbox_box2_input1:checked + .fruit__chekbox2_label1 {
+  @include input;
+}
+.fruit__chekbox_box2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.fruit__chekbox_box2_text {
+  @include title(12px);
+  border-radius: 12px;
+  border: 1px solid $c-1-e;
+  padding: 0px 8px;
+}
+.fruit__chekbox_box3 {
+  padding-right: 24px;
+  border-right: 1px solid $c-1-d;
+}
+.fruit__chekbox_box3_select {
+  border: none;
+  background-color: transparent;
+  @include title(12px);
+  outline: none;
+}
+.fruit__form_text {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.fruit__form_box_text {
+  @include title(12px);
+}
+.fruit__form_text {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.fruit__form_desc {
+  @include btn8;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 118px;
+  &::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../../img/Xicon.svg);
+  }
+}

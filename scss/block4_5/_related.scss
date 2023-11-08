@@ -1,0 +1,21 @@
+.related {
+  padding: 64px 45px;
+}
+.related__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.related__content_title {
+  @include title(16px, $c-1-a);
+}
+.related__content_btn {
+  @include btn(3, small, false, 1);
+}
+.related__card{
+    width: 100%;
+    display: flex;
+  flex-wrap: nowrap;
+    margin-bottom: 0;
+}

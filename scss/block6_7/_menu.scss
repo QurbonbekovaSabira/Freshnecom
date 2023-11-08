@@ -1,0 +1,129 @@
+.menu {
+  padding: 48px 45px;
+}
+.menu__box{
+    margin-top: 96px;
+    margin-bottom: 48px;
+    display: flex;
+    gap:32px;
+}
+.menu__img_first {
+  max-width: 569px;
+  position: relative;
+}
+.menu__img_first_profile_img {
+  width: 100%;
+  z-index: -1;
+}
+.menu__img_first_content_title {
+  @include title(22px, $c-1-j);
+  max-width: 380px;
+  position: absolute;
+  left: 24px;
+  bottom: 64px;
+  margin-bottom: 8px;
+}
+.menu__img_first_content_profile {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 16px;
+  bottom: 16px;
+}
+.menu__img_first_profile_text {
+  margin-left: 8px;
+  @include text($c-1-j, 12px);
+}
+.menu__img_first_profile_text2 {
+  @include text($c-1-j, 12px);
+  margin-left: 16px;
+}
+.menu__img_box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+.menu__box_nav {
+  max-width: 269px;
+}
+.menu__box_nav_first {
+  width: 100%;
+  margin-bottom: 48px;
+}
+.menu__box_first_title {
+  @include title(18px, _);
+  margin-bottom: 16px;
+}
+.menu__box_first_link_date {
+  @include text($c-2-a, 14px);
+  margin-bottom: 12px;
+  display: block;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.menu__box_first_link_date:last-child {
+  margin-bottom: 0;
+}
+.menu__box_first_link_type {
+  display: block;
+  margin-bottom: 12px;
+  cursor: pointer;
+  text-decoration: underline;
+  @include text($c-1-c, 14px);
+}
+.menu__box_first_link_type:last-child {
+  margin-bottom: 0;
+}
+.menu__box_first_title3 {
+  margin-bottom: 16px;
+}
+.menu__box_first_text{
+    margin-bottom: 24px;
+    @include text($c-1-c,14px);
+}
+.menu__box_first_inputBox{
+    max-width: 269px;
+    position: relative;
+}
+.menu__box_first_input{
+    width: 100%;
+    padding: 11px 16px 12px 21px;
+    @include text($c-1-c,14px);
+    border-radius: 12px;
+    border: 1px solid $c-1-d;
+    background: $c-1-h;
+}
+.menu__box_first_btn{
+position: absolute;
+@include btn(3,small,_,_);
+top: 3px;
+right: 4px;
+}
+/////cards
+.menu__card{
+    width: 269px;
+
+}
+.menu__card_btn{
+    @include btn8;
+    display: inline-block;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+.menu__card_title{
+    @include title(18px,$c-1-a);
+    margin-bottom: 16px;
+}
+.menu__card_text{
+    @include text;
+}
+.menu__card_text span{
+    margin-left: 16px;
+}
+.menu__list{
+    display: grid;
+    grid-template-columns: repeat(3,269px);
+    gap: 32px;
+    flex-wrap: wrap;
+}

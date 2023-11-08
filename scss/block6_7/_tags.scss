@@ -1,0 +1,62 @@
+.tags{
+    padding: 48px 45px;
+padding-bottom: 0;
+}
+.tags__container{
+    display: flex;
+    gap:32px;
+  
+}
+.tags__atribut_text{
+    @include title(18px,_);
+    margin-bottom: 16px;
+}
+.tags__atribut_box{
+    max-width: 169px;
+}
+.tags__atribut{
+    width: 100%;
+margin-bottom: 48px;
+}
+.tags__atribut_link_box{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap
+}
+.tags__atribut_link{
+    @include btn8(4px 10px);
+    display: block;
+}
+.tags__atribut_box_btn{
+    @include btn(3,medium,true,5);
+}
+.tags__content_box{
+    max-width: 569px;
+}
+.tags__content_box_text1{
+    width: 100%;
+    @include text($c-1-a,17px);
+    margin-bottom: 48px;
+}
+.tags__content_box_title1{
+    @include title(18px,_);
+    margin-bottom: 12px;
+}
+.tags__content_box_text2{
+    width: 100%;
+    @include text($c-1-a,17px);
+    margin-bottom: 31px;
+}
+.tags__content_btn_box{
+    display: flex;
+    align-items: center;
+    gap:16px;
+}
+.tags__content_btn_title{
+    @include title(18px,_);
+   
+}
+.tags__content_btn{
+    @include btn(3,small,true,6);
+}

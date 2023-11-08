@@ -1,0 +1,80 @@
+.comment{
+    padding: 48px 45px;
+}
+.comment__input_box{
+    max-width: 569px;
+}
+.comment__input_hero_title{
+    @include title(22px,$c-1-a);
+    margin-bottom: 12px;
+}
+.comment__input_hero_title{
+    margin-top: 48px;
+}
+.comment__input_hero_text{
+    @include text($c-1-a,17px);
+    margin-bottom: 16px;
+}
+.comment__input_hero_text span{
+    text-decoration: underline;
+}
+.comment__input{
+    width: 268px;
+}
+.comment__input_box_first{
+    display: flex;
+    gap:32px;
+    margin-bottom: 32px;
+}
+.comment__input_box_second{
+    width: 497px;
+    margin-bottom: 32px;
+}
+.comment__input_textarea{
+    width: 569px;
+    margin-bottom: 32px;
+}
+.comment__input_box_btn{
+    @include btn(2,large,_,_);
+    margin-bottom: 48px;
+}
+// cards
+.comment__box_title{
+    @include title(22px,_);
+    margin-bottom: 12px;
+}
+.comment__box_card1{
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid $c-1-d;
+    background: $c-1-j;
+}
+.comment__box_card1_profil{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+.comment__box_card1_profil_content_btnB{
+    display: flex;
+    align-items: center;
+    gap:6px;
+}
+.comment__box_card1_profil_content_title{
+    @include title(12px,_);
+}
+.comment__box_card1_profil_content_btn{
+    @include btn8;
+
+}
+.comment__box_card1_profil_date{
+    @include text($c-1-d,12px);
+}
+.comment__box_card1_textP{
+    @include text($c-1-a,14px);
+}
+.comment__box_card2{
+    margin-top: 24px;
+    width: 468px;
+    margin-left: 100px;
+}

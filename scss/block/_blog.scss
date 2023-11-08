@@ -1,0 +1,90 @@
+.blog {
+  @include pd;
+}
+.blog__content_box {
+  display: flex;
+  gap: 31px;
+}
+.blog__dinner {
+  position: relative;
+  width: 469px;
+}
+.blog__dinner_img {
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+.blog__dinner_link {
+  @include title(12px, $c-2-a);
+  border-radius: 12px;
+  background: $c-2-e;
+  padding: 0 8px;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+.blog__dinner_title {
+  @include title(22px, $c-1-j);
+  position: absolute;
+  margin-bottom: 8px;
+  bottom: 64px;
+  left: 24px;
+}
+.blog__dinner_desc_box {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+.blog__dinner_desc_job {
+  @include text($c-1-j);
+  margin-left: 8px;
+  margin-right: 16px;
+}
+.blog__dinner_desc_time {
+  @include text($c-1-j);
+}
+// card 2
+.blog__vegetable {
+  width: 269px;
+}
+.blog__vegetable_img {
+  margin-bottom: 24px;
+}
+.blog__vegetable_link {
+  @include title(12px, $c-2-a);
+  border-radius: 12px;
+  background: $c-2-e;
+  padding: 0 8px;
+}
+.blog__vegetable_title {
+  margin-top: 8px;
+  margin-bottom: 16px;
+  @include title(18px);
+}
+.blog__vegetable_job {
+  @include text($c-1-a);
+}
+.blog__vegetable_job_box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+// mini card
+
+.blog__menu_content {
+  width: 249px;
+}
+.blog__menu_title {
+  @include subTitle;
+  margin-bottom: 16px;
+}
+.blog__menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.blog__menu:not(:nth-child(3)){
+    margin-bottom: 32px;
+}

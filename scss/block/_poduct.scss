@@ -1,0 +1,48 @@
+.product{
+  @include pd;
+}
+.product__sell{
+    display: flex;
+    gap: 32px;
+    margin-bottom: 128px;
+}
+.product__sell_card_box{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.product__sell_card{
+   @include card;
+   position: relative;
+}
+.product__sell_card_img{
+    margin-bottom: 16px;
+  
+}
+.product__sell_card_sale{
+    position: absolute;
+    @include title(12px);
+    color: $c-2-a;
+    top: 28px;
+    left: 36px;
+    z-index: 10;
+}
+.product__sell_card_title{
+    @include subTitle;
+    margin-bottom: 4px;
+}
+.product__sell_card_text{
+    @include text;
+    margin-bottom: 16px;
+}
+.product__sell_card_btn_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.product__sell_card_price{
+    @include title(18px);
+}
+.product__sell_card_btn{
+    @include btn(2,small,ghj,5)
+}

@@ -1,0 +1,47 @@
+.customer__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.customer{
+ @include pd;
+}
+.customer__title {
+  @include title(18px);
+}
+.customer__btn {
+  @include btn(3, small, false, 1);
+}
+
+.customer__card {
+  width: 369px;
+  padding: 24px 32px;
+  padding-bottom: 0;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid #f1f1f1;
+  background: $c-1-j;
+  position: relative;
+}
+.customer__text {
+  @include subTitle;
+  margin-bottom: 24px;
+}
+.customer__desc {
+  @include title(12px);
+  color: $c-1-c;
+  margin-bottom: 40px;
+}
+.customer__cards {
+  margin-bottom: 64px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+// flex-direction: column;
+}
+.customer__card_img {
+  position: absolute;
+  left: 41%;
+  transform: translateY(-50%);
+}

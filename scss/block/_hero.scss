@@ -1,0 +1,57 @@
+.hero{
+    @include pd;
+}
+.hero__container{
+    display: flex;
+justify-content: space-between;
+}
+.hero__nav{
+    width: 289px;
+   
+}
+.hero__nav_title{
+    font-size: 18px;
+    color:  #151515;
+    font-weight: 600;
+ 
+    margin-bottom: 16px;
+}
+.hero__nav_link{
+    width: 100%;
+    @include text($c-2-a);
+    display: inline-block;
+    cursor: pointer;
+    text-decoration-line: underline;
+    margin-bottom: 12px;
+
+}
+.hero__nav_link:nth-child(6){
+    margin-bottom: 48px;
+}
+.hero__nav_btn{
+    @include btn(3,small,false,3);
+}
+.hero__card_box{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.hero__card{
+    // height: 260px;
+    width: 419px;
+    padding: 33px 48px;
+    background-repeat: no-repeat;
+    background-image: url(../../img/heroBG.svg);
+    border-radius: 12px;
+}
+.hero__card_text{
+@include text($c-2-a);
+margin-bottom:8px;
+}
+.hero__card_title{
+@include title;
+margin-bottom: 94px;
+}
+.hero__card_btn{
+    @include btn(1,medium,false,2)
+}

@@ -1,0 +1,20 @@
+.topics {
+  padding: 48px 45px;
+}
+.topics__hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+.topics__hero_title {
+  @include title(18px, $c-1-a);
+}
+.topics__hero_btn {
+  @include btn(3, small, false, 1);
+}
+.topics__card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
